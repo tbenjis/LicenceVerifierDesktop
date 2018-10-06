@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="dpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="518.0" style="-fx-background-color: #29434e;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="verify.Controller">
+   <children>
+      <Pane prefHeight="423.0" prefWidth="518.0">
+      <JFXButton fx:id="send_request" layoutX="112.0" layoutY="373.0" prefHeight="34.0" prefWidth="129.0" style="-fx-background-color: #34515e;" text="Send Request" textFill="#c1d5e0" />
+      <JFXButton fx:id="cancel" layoutX="275.0" layoutY="373.0" prefHeight="34.0" prefWidth="129.0" style="-fx-background-color: #ef5350;" text="Cancel" textFill="#ffe3e3" />
+      <JFXProgressBar fx:id="progress_bar" layoutX="42.0" layoutY="325.0" prefHeight="3.0" prefWidth="434.0" progress="0.32" />
+      <Label fx:id="processing_text" alignment="CENTER" contentDisplay="CENTER" layoutX="42.0" layoutY="331.0" prefHeight="17.0" prefWidth="434.0" text="Processing 2 of 423" textFill="#78909c" />
+      <Label fx:id="num_records" alignment="CENTER" layoutX="43.0" layoutY="301.0" prefHeight="21.0" prefWidth="434.0" text="0 Records" textFill="#90a4ae">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="281.0" layoutY="138.0" prefHeight="27.0" prefWidth="219.0" text="VALID LICENCE" textFill="#90a4ae">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="num_valid" alignment="CENTER" contentDisplay="CENTER" layoutX="281.0" layoutY="174.0" prefHeight="94.0" prefWidth="219.0" text="0" textFill="#0f9d58">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="25.0" layoutY="136.0" prefHeight="27.0" prefWidth="102.0" text="INVALID" textFill="#90a4ae">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="num_invalid" alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="163.0" prefHeight="40.0" prefWidth="102.0" text="0" textFill="#ef5350">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="25.0" layoutY="210.0" prefHeight="27.0" prefWidth="102.0" text="EXPIRED" textFill="#90a4ae">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="num_expired" alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="237.0" prefHeight="40.0" prefWidth="102.0" text="0" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="157.0" layoutY="138.0" prefHeight="27.0" prefWidth="120.0" text="ERROR" textFill="#90a4ae">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="num_error" alignment="CENTER" contentDisplay="CENTER" layoutX="157.0" layoutY="163.0" prefHeight="40.0" prefWidth="120.0" text="0" textFill="#edac51">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Separator disable="true" layoutX="125.0" layoutY="137.0" opacity="0.08" orientation="VERTICAL" prefHeight="146.0" prefWidth="5.0" />
+      <Label alignment="CENTER" layoutX="157.0" layoutY="210.0" prefHeight="27.0" prefWidth="120.0" text="TIME" textFill="#90a4ae">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="request_time" alignment="CENTER" contentDisplay="CENTER" layoutX="138.0" layoutY="237.0" prefHeight="40.0" prefWidth="158.0" text="00:00:00" textFill="#90a4ae">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="choose_file" layoutX="38.0" layoutY="55.0" prefHeight="34.0" prefWidth="287.0" style="-fx-background-color: #34515e;" text="Choose File..." textFill="#c1d5e0" />
+      <Label fx:id="file_path" contentDisplay="CENTER" layoutX="38.0" layoutY="99.0" prefHeight="17.0" prefWidth="434.0" text="File: C:/Documents/Users/Test/Licence.csv" textFill="#90a4ae" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1a3039" height="40.0" layoutY="1.0" stroke="#1a303900" strokeType="INSIDE" width="518.0" />
+      <JFXTextField fx:id="sleep_time" focusColor="WHITE" labelFloat="true" layoutX="341.0" layoutY="60.0" promptText="Sleep Time (min)" style="-fx-prompt-text-fill: #78909c; -fx-text-fill: #ffffff;" unFocusColor="#90a4ae" />
+      <JFXButton fx:id="close_btn" alignment="CENTER" contentDisplay="CENTER" layoutX="483.0" layoutY="8.0" prefHeight="25.0" prefWidth="28.0" ripplerFill="WHITE" style="-fx-background-color: #ef5350; -fx-border-radius: 0pt; -fx-background-radius: 0pt;" text="X" textAlignment="CENTER" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="title_bar_text" alignment="CENTER" contentDisplay="CENTER" layoutX="146.0" layoutY="10.0" prefHeight="21.0" prefWidth="219.0" text="Licence Verifier" textFill="#90a4ae">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+         <JFXButton fx:id="help_btn" alignment="CENTER" contentDisplay="CENTER" layoutX="448.0" layoutY="8.0" prefHeight="25.0" prefWidth="28.0" ripplerFill="WHITE" style="-fx-background-color: #1a3039; -fx-border-radius: 0pt; -fx-background-radius: 0pt;" text="?" textAlignment="CENTER" textFill="WHITE">
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+               <Font name="Verdana Bold" size="12.0" />
+            </font>
+         </JFXButton>
+      </Pane>
+   </children>
+</StackPane>

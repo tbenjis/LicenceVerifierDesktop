@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Main-Class: verify.Main
+Created-By: EdgeWalk
+Specification-Title: Licence Verifier
+Specification-Version: 1.0
+Specification-Vendor: EdgeWalk Solutions.
+Name: verify/
+Sealed: true
+
