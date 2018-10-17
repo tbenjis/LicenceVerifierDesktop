@@ -279,7 +279,7 @@ public class Controller{
                         try {
                             String[] dob = row[1].trim().split("/");
                             //System.out.println("licence: " + row[0] + " day: " + dob[0] + " month: " + dob[1] + " year: " + dob[2]);
-                            sr.getRequest(row[0].trim(), dob[0].trim(), dob[1].trim(), dob[2].trim());
+                            sr.getRequest(row[0].trim().toUpperCase(), dob[0].trim(), dob[1].trim(), dob[2].trim());
 
                             //get the data
                             valid_keys = sr.getVerified();
